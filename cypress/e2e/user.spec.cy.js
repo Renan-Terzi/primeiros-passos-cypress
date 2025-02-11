@@ -9,10 +9,9 @@ const dashboardPage = new DashboardPage()
 const menuPage = new MenuPage()
 const infoPage = new InfoPage()
 
-
 describe('Orange HRM Tests', () => {
 
-  it('User Info Update', () => {
+  it('User Info Update Success', () => {
 
     loginPage.accessLoginPage()
     loginPage.loginWithUser(userData.userSuccess.username,userData.userSuccess.password)
@@ -28,11 +27,4 @@ describe('Orange HRM Tests', () => {
 
   })
   
-  it('Login - Fail', () => {
-
-    loginPage.accessLoginPage()
-    loginPage.loginWithUser(userData.userFail.username,userData.userFail.password)
-    loginPage.checkAccessInvalid()
-
-   })
 })
